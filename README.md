@@ -1,3 +1,3 @@
 # vars-ts
 
-### This file contains variables using in typescript based projects
+### This file contains variables using in typescript based projects in DoSomeLight organisation
