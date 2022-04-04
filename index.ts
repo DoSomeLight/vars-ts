@@ -30,12 +30,12 @@ export type EACH_DEVICE_PROPS = {
 	dname: string
 }
 
-export type DEVICE_DATA = EACH_DEVICE_PROPS[]
+export type DEVICES_DATA = EACH_DEVICE_PROPS[]
 
 export type COOKIES_DATA = {
 	user_name: string
 	user_hash: string
-	devices_data: DEVICE_DATA
+	devices_data: DEVICES_DATA
 }
 
 export type _unknown = 'UNKNOWN' | undefined | null
