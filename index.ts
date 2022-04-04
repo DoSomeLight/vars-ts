@@ -1,6 +1,5 @@
-/* eslint-disable @typescript-eslint/explicit-module-boundary-types */
 import _ from 'lodash-es/array'
-import {ConvertEnum} from './fns'
+import { ConvertEnum } from './fns'
 
 export enum MAIN_PATH {
 	'/',
@@ -42,4 +41,3 @@ export type COOKIES_DATA = {
 export type _unknown = 'UNKNOWN' | undefined | null
 
 export const all_device_types = ConvertEnum(DEVICE_TYPES).toArray_Of_OBJECTS()
-
