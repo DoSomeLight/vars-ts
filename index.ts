@@ -32,9 +32,16 @@ export type EACH_DEVICE_PROPS = {
 
 export type DEVICES_DATA = EACH_DEVICE_PROPS[]
 
-export type COOKIES_DATA = {
+export type ACCOUNT_DATA = {
+	user_device_system: 'mobile' | 'pc'
+	user_email: string
 	user_name: string
 	user_hash: string
+	user_phone: string
+}
+
+export type COOKIES_DATA = {
+	account_data: ACCOUNT_DATA
 	devices_data: DEVICES_DATA
 }
 
