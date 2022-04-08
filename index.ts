@@ -1,21 +1,18 @@
-import _ from 'lodash-es/array'
-import { ConvertEnum } from './fns'
-
 export enum MAIN_PATH {
 	'/',
 	'/auth',
-	'/register'
+	'/register',
 }
 
 export enum DEVICE_TYPES {
 	relay = 0,
 	termo = 1,
-	lumen = 2
+	lumen = 2,
 }
 
 export enum DEVICE_TOOGLE_STATUS {
 	'onn',
-	'off'
+	'off',
 }
 
 export type DEVICE_ONOFFLINE_STATUS = 'online' | 'offline'
@@ -46,5 +43,3 @@ export type COOKIES_DATA = {
 }
 
 export type _unknown = 'UNKNOWN' | undefined | null
-
-export const all_device_types = ConvertEnum(DEVICE_TYPES).toArray_Of_OBJECTS()
