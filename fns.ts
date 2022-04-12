@@ -1,7 +1,6 @@
 /* eslint-disable @typescript-eslint/explicit-module-boundary-types */
-// import { DEVICE_TYPES } from '.'
+import { DEVICE_TYPES, EnumType } from '.'
 import _ from 'lodash'
-// import { all_device_types } from './all-device-types'
 
 export const ConvertEnum = <K extends string, V extends string | number>(_enum: Tenum<K, V>) => ({
 	toArray_Of_OBJECTS: () =>
