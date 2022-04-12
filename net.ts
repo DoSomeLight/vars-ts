@@ -1,6 +1,0 @@
-export enum TaskEvents {
-	ADD_TASK = 'ADD_TASK',
-	START_TASK = 'START_TASK',
-	STOP_TASK = 'STOP_TASK',
-	UPDATE_TASK = 'UPDATE_TASK',
-}
