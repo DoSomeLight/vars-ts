@@ -2,8 +2,8 @@
 import { DEVICE_TYPES, EnumType } from '.'
 import _ from 'lodash'
 
-export const ConvertEnum = <K extends string, V extends string | number>(_enum: Tenum<K, V>) => ({
-	toArray_Of_OBJECTS: () =>
+export const ConvertEnum = <K extends string, V extends string | number>(_enum: EnumType<K, V>) => ({
+	toObjectArray: () =>
 		Object.entries<V>(_enum).map(([key, value]) => ({
 			key,
 			value,
