@@ -42,4 +42,6 @@ export type COOKIES_DATA = {
 	devices_data: DEVICES_DATA
 }
 
+export type EnumType<K extends string, V extends string | number> = { [s in K]: V }
+
 export type _unknown = 'UNKNOWN' | undefined | null
