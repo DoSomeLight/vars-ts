@@ -1,4 +1,4 @@
-import { TaskEventsEnum, TaskPropsInterface } from './cron-task-manager'
+import { TaskEventsEnum, TaskPropsInterface } from './node-timetable'
 
 export interface TieBus<Socket> {
 	onEvent: (event: TaskEventsEnum, cb: (task_obj: TaskPropsInterface) => void) => void
