@@ -11,6 +11,6 @@ export enum TaskEventsEnum {
 	UPDATE_TASK = 'UPDATE_TASK',
 }
 
-export type TaskManager = {
+export type TimeTable = {
 	[key in TaskEventsEnum]: (taskProps: TaskPropsInterface) => void
 }
