@@ -1,7 +1,7 @@
-import { TaskEventsEnum, TaskPropsInterface } from './node-timetable'
+import { TaskEventsEnum, TaskProps } from './node-timetable'
 
 export interface TieBus<Socket> {
-	onEvent: (event: TaskEventsEnum, cb: (task_obj: TaskPropsInterface) => void) => void
-	emit: (event: TaskEventsEnum, task_obj: TaskPropsInterface) => void
+	onEvent: (event: TaskEventsEnum, cb: (task_obj: TaskProps) => void) => void
+	emit: (event: TaskEventsEnum, task_obj: TaskProps) => void
 	UNSAFE_socket: Socket
 }

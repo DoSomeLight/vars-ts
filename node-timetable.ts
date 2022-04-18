@@ -1,4 +1,4 @@
-export interface TaskPropsInterface {
+export interface TaskProps {
 	job_key: string
 	cron_exp?: string
 	task?: string
@@ -12,5 +12,5 @@ export enum TaskEventsEnum {
 }
 
 export type TaskManager = {
-	[key in TaskEventsEnum]: (taskProps: TaskPropsInterface) => void
+	[key in TaskEventsEnum]: (taskProps: TaskProps) => void
 }
