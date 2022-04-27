@@ -1,5 +1,6 @@
+import { DeviceToggleState } from '.'
 import { Action } from './node-executor'
-import { TaskEventsEnum, TaskProps, TaskManagerMethod } from './node-timetable'
+import { TaskEventsEnum, TaskManagerMethod, TaskProps } from './node-timetable'
 
 export interface TieBus {
 	timetable?: {
@@ -10,5 +11,13 @@ export interface TieBus {
 	executor?: {
 		onEvent?: (event: 'listen_exec', cb: (task: Action) => void) => void
 		emit?: (event: 'listen_exec', task: Action) => void
+	}
+
+	perform?: {
+		emitToDevice?: (device_id: string) => {
+			toggle: (toggleState: DeviceToggleState) => void
+			setLimitUp: (limitUp: string) => void
+			setLimitDown: (limitDown: string) => void
+		}
 	}
 }
