@@ -19,3 +19,10 @@ export interface Action {
 	device_type: keyof typeof DEVICE_TYPES
 	feat: ActionFeat
 }
+
+export interface PerformExecutorObject {
+	device_id: string
+	toggleState?: string
+	limitUp?: string
+	limitDown?: string
+}
