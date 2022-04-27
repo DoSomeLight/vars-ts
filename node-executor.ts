@@ -22,7 +22,7 @@ export interface Action {
 
 export interface PERFORM_EXECUTOR_OBJECT {
 	device_id: string
-	toggleState?: string
-	limitUp?: string
-	limitDown?: string
+	toggle_state?: DeviceToggleState
+	limit_up?: string
+	limit_down?: string
 }
