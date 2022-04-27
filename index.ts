@@ -10,6 +10,11 @@ export enum DEVICE_TYPES {
 	lumen = 2,
 }
 
+export interface DeviceToggleState {
+	relay0: keyof typeof DEVICE_TOOGLE_STATUS
+	relay1: keyof typeof DEVICE_TOOGLE_STATUS
+}
+
 export enum DEVICE_TOOGLE_STATUS {
 	'onn',
 	'off',
