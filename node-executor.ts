@@ -1,4 +1,4 @@
-import { DEVICE_TOOGLE_STATUS, DEVICE_TYPES } from '.'
+import { DEVICE_TYPES, DeviceToggleState } from '.'
 
 export interface ActionFeat {
 	toggle?: keyof typeof DEVICE_TOOGLE_STATUS
