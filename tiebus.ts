@@ -1,4 +1,4 @@
-import { DeviceToggleState } from '.'
+import { DeviceToggleState, DEVICE_TYPES } from '.'
 import { Action } from './node-executor'
 import { TaskEventsEnum, TaskManagerMethod, TaskProps } from './node-timetable'
 
@@ -15,9 +15,9 @@ export interface TieBus {
 
 	perform?: {
 		emitToDevice?: (device_id: string) => {
-			toggle: (toggleState: DeviceToggleState) => void
-			setLimitUp: (limitUp: string) => void
-			setLimitDown: (limitDown: string) => void
+			toggle: (device_type: keyof typeof DEVICE_TYPES, detoggleState: DeviceToggleState) => void
+			setLimitUp: (device_type: keyof typeof DEVICE_TYPES, limitUp: string) => void
+			setLimitDown: (device_type: keyof typeof DEVICE_TYPES, limitDown: string) => void
 		}
 	}
 }
