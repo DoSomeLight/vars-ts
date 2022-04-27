@@ -13,6 +13,8 @@ export enum TaskEventsEnum {
 	UPDATE_TASK = 'UPDATE_TASK',
 }
 
+export type TaskManagerMethod = (taskProps: TaskProps) => void
+
 export type TaskManager = {
-	[key in TaskEventsEnum]: (taskProps: TaskProps) => void
+	[key in TaskEventsEnum]: TaskManagerMethod
 }
