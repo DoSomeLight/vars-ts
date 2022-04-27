@@ -1,7 +1,9 @@
+import { Action } from './node-executor'
+
 export interface TaskProps {
 	job_key: string
 	cron_exp?: string
-	task?: string
+	action?: Action
 }
 
 export enum TaskEventsEnum {
