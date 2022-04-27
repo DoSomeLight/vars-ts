@@ -20,7 +20,7 @@ export interface Action {
 	feat: ActionFeat
 }
 
-export interface PerformExecutorObject {
+export interface PERFORM_EXECUTOR_OBJECT {
 	device_id: string
 	toggleState?: string
 	limitUp?: string
