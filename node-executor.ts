@@ -7,7 +7,12 @@ export enum ExecutorEventsEnum {
 }
 
 export interface ActionFeat {
+	device_id: string
 	toggle_state?: DeviceToggleState
+	temp_limit?: {
+		up?: string
+		down?: string
+	}
 }
 
 export interface Action {
